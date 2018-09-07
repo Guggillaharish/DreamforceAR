@@ -1,0 +1,45 @@
+<nav class="navbar-light fixed-top">
+	<div class="navbar-left"><div class="navbar-left__toggle">
+	<a href="#">
+	<span class="glyphicon glyphicon-menu-hamburger"></span>MENU</a></div>
+	<ul class="nav side-menu"><li class="active"><span class="menu-icon"></span>
+	<a href="/dashboard">Dashboard</a></li> <li><span class="menu-icon"></span>
+	<a href="https://app.lambdatest.com/console/realtime">
+	Real Time Test<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+	<ul class="dropdown-menu side-menu__dropdown-menu"><li>
+	<a href="https://app.lambdatest.com/console/realtime">Browser</a></li></ul></li>
+	<li><span class="menu-icon"></span> <a href="#" class="dropdown-toggle">
+	Visual UI Test<span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+	<ul class="dropdown-menu side-menu__dropdown-menu"><li>
+	<a href="https://app.lambdatest.com/console/screenshot">Screenshot</a></li>
+	 <li><a href="https://app.lambdatest.com/console/responsive">Responsive</a></li>
+	 <li><a href="http://app.lambdatest.com/console/smart-testing">Smart Testing</a></li></ul></li>
+		<li><span class="menu-icon"></span><a href="https://app.lambdatest.com/console/test-logs">Test Logs</a></li>
+		<li><span class="menu-icon"></span><a href="/issue-tracker">Issue Tracker</a></li> <li>
+		<span class="menu-icon"></span>
+		<a href="#" class="dropdown-toggle">Settings<span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+		</a>
+		 <ul class="dropdown-menu side-menu__dropdown-menu"><li><a href="/user/profile">Profile</a></li>
+		 <li><a href="/team">Team</a></li> <li><a href="/user/preferences">Preferences</a></li>
+			<li><a href="/integrations">Integrations</a></li> <li><a href="/billing/payments">Payments</a></li>
+			<li><a href="/billing/plan">Plans</a></li></ul></li></ul></div>
+
+      <div class="row top-bar">
+      <div class="container-fluid">
+      <a href="/dashboard" class="navbar-brand">
+      <img height="40" src="https://www.autorabit.com/wp-content/uploads/2017/10/logo.png"
+       alt="LambdaTest Logo" title="AutoRABIT Logo" class="logo">
+      </a>
+      <div class="right-side-menu">
+        <button  mat-flat-button	[matMenuTriggerFor]="menu">User <i class="material-icons">
+arrow_drop_down
+</i></button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Settings</button>
+            <button mat-menu-item>Logout</button>
+          </mat-menu>
+      </div>
+    </div>
+
+    </div>
+  </nav>
