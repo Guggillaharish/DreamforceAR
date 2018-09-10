@@ -1,7 +1,7 @@
 import {Component, OnDestroy} from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators/takeWhile' ;
-
+declare var $:any;
 interface CardSettings {
   title: string;
   iconClass: string;
@@ -15,74 +15,105 @@ interface CardSettings {
 })
 export class DashboardComponent implements OnDestroy {
 
-  private alive = true;
 
-  lightCard: CardSettings = {
-    title: 'Light',
-    iconClass: 'nb-lightbulb',
-    type: 'primary',
-  };
-  rollerShadesCard: CardSettings = {
-    title: 'Roller Shades',
-    iconClass: 'nb-roller-shades',
-    type: 'success',
-  };
-  wirelessAudioCard: CardSettings = {
-    title: 'Wireless Audio',
-    iconClass: 'nb-audio',
-    type: 'info',
-  };
-  coffeeMakerCard: CardSettings = {
-    title: 'Coffee Maker',
-    iconClass: 'nb-coffee-maker',
-    type: 'warning',
-  };
+  constructor() {
+    $(document).ready(function(){
+    // setTimeout(function(){$(".second-step").fadeIn(3000);},2000);
+    // setTimeout(function(){$(".third-step").fadeIn(3000);},3000);
+    // setTimeout(function(){$(".fourth-step").fadeIn(3000);},4000);
+    // setTimeout(function(){$(".fifth-step").fadeIn(3000);},5000);
 
-  statusCards: string;
 
-  commonStatusCardsSet: CardSettings[] = [
-    this.lightCard,
-    this.rollerShadesCard,
-    this.wirelessAudioCard,
-    this.coffeeMakerCard,
-  ];
+      setTimeout(function(){
+        $(".second-step").fadeIn(3000);
+        var animateSettings = {
+          top:  "70%",
+          left: "44%"
+        }
+        $("#test").animate(animateSettings, 1000);
 
-  statusCardsByThemes: {
-    default: CardSettings[];
-    cosmic: CardSettings[];
-    corporate: CardSettings[];
-  } = {
-    default: this.commonStatusCardsSet,
-    cosmic: this.commonStatusCardsSet,
-    corporate: [
-      {
-        ...this.lightCard,
-        type: 'warning',
-      },
-      {
-        ...this.rollerShadesCard,
-        type: 'primary',
-      },
-      {
-        ...this.wirelessAudioCard,
-        type: 'danger',
-      },
-      {
-        ...this.coffeeMakerCard,
-        type: 'secondary',
-      },
-    ],
-  };
+        animateSettings = {
+          top:  "70%",
+          left: "539%"
+        }
+        $("#test").animate(animateSettings, 4000);
 
-  constructor(private themeService: NbThemeService) {
-    this.themeService.getJsTheme()
-      .pipe(takeWhile(() => this.alive))
-      .subscribe(theme => {
-        this.statusCards = this.statusCardsByThemes[theme.name];
+        animateSettings = {
+          top:  "141%",
+          left: "537%"
+        }
+        $("#test").animate(animateSettings, 1000);
+      },3000)
+
+
+      setTimeout(function(){
+        $(".third-step").fadeIn(3000);
+
+        var animateSettings = {
+          top:  "229%",
+          left: "537%"
+        }
+        $("#test").animate(animateSettings, 1000);
+        animateSettings = {
+          top:  "229%",
+          left: "44%"
+        }
+              $("#test").animate(animateSettings, 4000);
+
+        animateSettings = {
+          top:  "265%",
+          left: "44%"
+        }
+        $("#test").animate(animateSettings, 4000);
+
+
+      },6000)
+
+      setTimeout(function(){
+        $(".fourth-step").fadeIn(3000);
+
+        var animateSettings = {
+          top:  "374%",
+          left: "44%"
+        }
+        $("#test").animate(animateSettings, 1000);
+        animateSettings = {
+          top:  "374%",
+          left: "530%"
+        }
+        $("#test").animate(animateSettings, 4000);
+
+
+      },12000)
+
+
+      setTimeout(function(){
+        $(".fifth-step").fadeIn(3000);
+        var animateSettings = {
+          top:  "520%",
+          left: "530%"
+        }
+        $("#test").animate(animateSettings, 1000);
+        animateSettings = {
+          top:  "520%",
+          left: "44%"
+        }
+        $("#test").animate(animateSettings, 4000);
+        animateSettings = {
+          top:  "570%",
+          left: "44%"
+        }
+        $("#test").animate(animateSettings, 4000);
+
+
+      },24000)
+
+
     });
+
+
   }
 
   ngOnDestroy() {
-    this.alive = false;
   }
 }

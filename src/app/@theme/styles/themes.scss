@@ -327,14 +327,14 @@ a:focus {
 
 .navbar-left .side-menu>li .menu-icon {
   position: absolute;
-  background: url(https://app.lambdatest.com/assets/images/side-nav-icons.png) no-repeat 0 0;
-  width: 25px;
-  height: 25px;
-  top: 12px;
-  margin: auto;
-  left: 15px;
-  display: block;
-  z-index: 22;
+      background: url("/assets/images/side-nav-icons.svg") no-repeat 0 0;
+      width: 30px;
+      height: 30px;
+      top: 5px;
+      margin: auto;
+      left: 10px;
+      display: block;
+      z-index: 22;
 }
 
 .navbar-left .side-menu>li.active a {
@@ -381,43 +381,43 @@ a:focus {
 }
 
 .navbar-left .side-menu>li:nth-child(2) .menu-icon {
-  background-position: -57px 0;
+  background-position: -37px 0;
 }
 
 .navbar-left .side-menu>li:nth-child(2):hover .menu-icon,.navbar-left .side-menu>li:nth-child(2).active .menu-icon {
-  background-position: -57px -39px;
+  background-position: -37px -39px;
 }
 
 .navbar-left .side-menu>li:nth-child(3) .menu-icon {
-  background-position: -116px 4px;
+  background-position: -107px 0px;
 }
 
 .navbar-left .side-menu>li:nth-child(3):hover .menu-icon,.navbar-left .side-menu>li:nth-child(3).active .menu-icon {
-  background-position: -116px -35px;
+  background-position: -107px -39px;
 }
 
 .navbar-left .side-menu>li:nth-child(4) .menu-icon {
-  background-position: -175px 0;
+  background-position: -142px 0;
 }
 
 .navbar-left .side-menu>li:nth-child(4):hover .menu-icon,.navbar-left .side-menu>li:nth-child(4).active .menu-icon {
-  background-position: -175px -39px;
+  background-position: -142px -39px;
 }
 
 .navbar-left .side-menu>li:nth-child(5) .menu-icon {
-  background-position: -233px 0;
+  background-position: -175px 0;
 }
 
 .navbar-left .side-menu>li:nth-child(5):hover .menu-icon,.navbar-left .side-menu>li:nth-child(5).active .menu-icon {
-  background-position: -233px -39px;
+  background-position: -175px -39px;
 }
 
 .navbar-left .side-menu>li:nth-child(6) .menu-icon {
-  background-position: -293px 0;
+  background-position: -211px 0;
 }
 
 .navbar-left .side-menu>li:nth-child(6):hover .menu-icon,.navbar-left .side-menu>li:nth-child(6).active .menu-icon {
-  background-position: -293px -39px;
+  background-position: -211px -39px;
 }
 
 .navbar-left .side-menu>li .side-menu__dropdown-menu {

@@ -10,7 +10,7 @@ const routes: Routes = [{
   children: [ {
     path: 'dashboard',
     component: DashboardComponent,
-  }, {
+  },{
     path: 'tables',
     loadChildren: './tables/tables.module#TablesModule',
   }, {
