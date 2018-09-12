@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="login-form">
+    <div class="main-div">
+      <div class="panel">
+        <h2>AutoRABIT Login</h2>
+
+      </div>
+      <form name="loginForm" [formGroup]="loginForm" (ngSubmit)="Login()" id="Login">
+        <div class="form-group">
+          <label for="userName">Email</label>
+          <input type="text" class="form-control" id="userName" name="userName" placeholder="userName Address"
+            [(ngModel)]="userName" formControlName="userName" [ngClass]="{'is-invalid':loginForm.get('userName').touched && loginForm.get('userName').invalid}">
+          <div class="invalid-feedback">
+            <div>
+              User Name is required
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <input type="password" class="form-control" id="password" name="Password" placeholder="Password" [(ngModel)]="Password"
+            formControlName="password" [ngClass]="{'is-invalid':loginForm.get('password').touched && loginForm.get('password').invalid}">
+          <div class="invalid-feedback">
+            <div>
+              Passwoed is required
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+      </form>
+    </div>
+
+  </div>
+</div>

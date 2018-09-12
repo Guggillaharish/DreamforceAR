@@ -1,0 +1,36 @@
+<div id="main-wrap" class="main-wrap content" style="background-size:cover;height:100%;background:url('assets/images/background.jpg')">
+
+  <mat-card style="text-align:center;min-height:600px;align-items: center;
+    justify-content: center;
+    display: flex;background:transparent">
+
+    <div id="orgs-dropdown-area">
+      <div class="dropdown" id="dropdown">
+        <p id="header-title">Select Source & Destination Orgs</p>
+
+        <div class="item" disabled="true"  *ngFor="let org of AllOrgsData" id={{org.idSforg}} (click)="_handleClickDropElement(org.idSforg)">{{org.nmLable}}</div>
+
+      </div>
+      <div class="tag-area" id="tag-area">
+        <div style="clear:both"></div>
+        <h1 id="target-drop">Org Title</h1>
+        <i class="fab fa-dropbox" style="font-size:100px;color:#009CD7"></i>
+        <div style="clear:both"></div>
+      </div>
+      <div class="button-go">
+        Go
+        <i class="fas fa-angle-double-right" style="    position: relative;
+    margin-top: 3px;
+    margin-right: 10px;
+    font-size: 40px;
+    float: right;
+"></i>
+
+
+    </div>
+
+    </div>
+
+    </mat-card>
+</div>
+<div id="ground"></div>
