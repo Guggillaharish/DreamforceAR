@@ -2,8 +2,11 @@
 @import '~@nebular/theme/styles/theming';
 // @nebular out of the box themes
 @import '~@nebular/theme/styles/themes';
+<<<<<<< HEAD
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+=======
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 // which themes you what to enable (empty to enable all)
 $nb-enabled-themes: (corporate, default, cosmic);
 $nb-themes: nb-register-theme(( // app wise variables for each theme
@@ -355,12 +358,20 @@ a:focus {
 }
 
 .navbar-left .side-menu>li:nth-child(2) .menu-icon {
+<<<<<<< HEAD
   background-position: -72px 0;
+=======
+  background-position: -37px 0;
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 }
 
 .navbar-left .side-menu>li:nth-child(2):hover .menu-icon,
 .navbar-left .side-menu>li:nth-child(2).active .menu-icon {
+<<<<<<< HEAD
   background-position: -72px -39px;
+=======
+  background-position: -37px -39px;
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 }
 
 .navbar-left .side-menu>li:nth-child(3) .menu-icon {
@@ -399,6 +410,7 @@ a:focus {
   background-position: -211px -39px;
 }
 
+<<<<<<< HEAD
 
 .navbar-left .side-menu>li:nth-child(7) .menu-icon {
   background-position: -248px 0;
@@ -427,6 +439,8 @@ a:focus {
   background-position: -320px -39px;
 }
 
+=======
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 .navbar-left .side-menu>li .side-menu__dropdown-menu {
   padding: 0;
   background: #2e3c56;

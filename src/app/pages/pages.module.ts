@@ -8,7 +8,10 @@ import { MiscellaneousModule } from "./miscellaneous/miscellaneous.module";
 import { NgSidebarComponent } from "../ng-sidebar/ng-sidebar.component";
 
 import { MaterialModule } from "./material.module";
+<<<<<<< HEAD
 import { SelectOrgsComponent } from '../select-orgs/select-orgs.component';
+=======
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 const PAGES_COMPONENTS = [PagesComponent];
 
 @NgModule({
@@ -19,6 +22,10 @@ const PAGES_COMPONENTS = [PagesComponent];
     MiscellaneousModule,
     MaterialModule
   ],
+<<<<<<< HEAD
   declarations: [...PAGES_COMPONENTS, NgSidebarComponent, SelectOrgsComponent]
+=======
+  declarations: [...PAGES_COMPONENTS, NgSidebarComponent]
+>>>>>>> 8c80b38244e6cb70599b858ed3eb634489a19bf7
 })
 export class PagesModule {}
